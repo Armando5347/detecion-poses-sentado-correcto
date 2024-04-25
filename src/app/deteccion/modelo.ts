@@ -1,7 +1,6 @@
 import { unstable_noStore as noStore } from 'next/cache';
 import * as posedetection from '@tensorflow-models/pose-detection';
 import * as tf from '@tensorflow/tfjs';
-import { Noto_Sans_Anatolian_Hieroglyphs } from 'next/font/google';
 
 
 export async function detectaPoses(image: HTMLImageElement): Promise<any[]> {
@@ -25,7 +24,7 @@ export async function detectaPoses(image: HTMLImageElement): Promise<any[]> {
         // Establecer las opciones de detección
         const detectorOptions = {
             maxPoses: 1, // Detectar solo una pose
-            scoreThreshold: 0.5 // Umbral de confianza para la detección de poses
+            scoreThreshold: 0.6 // Umbral de confianza para la detección de poses
         };
 
         // Detectar poses en la imagen cargada

@@ -2,6 +2,14 @@
 
 .center-container {
     text-align: center;
+    width: 100%;
+    display:flexbox;
+    flex-direction: column;
+}
+
+.btn:hover{
+    color: gold;
+    border-color: gold;
 }
 
 .image-container {
