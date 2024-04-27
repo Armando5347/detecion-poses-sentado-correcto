@@ -24,7 +24,8 @@ export async function detectaPoses(image: HTMLImageElement): Promise<any[]> {
         // Establecer las opciones de detección
         const detectorOptions = {
             maxPoses: 1, // Detectar solo una pose
-            scoreThreshold: 0.6 // Umbral de confianza para la detección de poses
+            scoreThreshold: 0.7 // Umbral de confianza para la detección de poses
+            //añadir uno con poses que este poco seguras
         };
 
         // Detectar poses en la imagen cargada
